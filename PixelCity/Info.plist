@@ -39,5 +39,11 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>L&apos;application a besoin de votre localisation afin d&apos;avoir les photos de flickr</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>L&apos;application a besoin de votre localisation afin d&apos;avoir les photos de flickr</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>L&apos;application a besoin de votre localisation afin d&apos;avoir les photos de flickr</string>
 </dict>
 </plist>
