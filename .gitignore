@@ -1,0 +1,7 @@
+## User settings
+xcuserdata/
+
+*.xcscmblueprint
+*.xccheckout
+Pods/*
+Podfile.lock
