@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A072E0F61FCDC0D400015F48 /* PopVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A072E0F51FCDC0D400015F48 /* PopVC.swift */; };
 		A07DDCC61FCB2F5300C3641A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07DDCC51FCB2F5300C3641A /* AppDelegate.swift */; };
 		A07DDCC81FCB2F5300C3641A /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07DDCC71FCB2F5300C3641A /* MapVC.swift */; };
 		A07DDCCB1FCB2F5300C3641A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A07DDCC91FCB2F5300C3641A /* Main.storyboard */; };
@@ -21,6 +22,7 @@
 /* Begin PBXFileReference section */
 		602BA9FD9990837098E464C7 /* Pods-PixelCity.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PixelCity.release.xcconfig"; path = "Pods/Target Support Files/Pods-PixelCity/Pods-PixelCity.release.xcconfig"; sourceTree = "<group>"; };
 		83746633F8C777053870BDCF /* Pods_PixelCity.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PixelCity.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A072E0F51FCDC0D400015F48 /* PopVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopVC.swift; sourceTree = "<group>"; };
 		A07DDCC21FCB2F5300C3641A /* PixelCity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PixelCity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A07DDCC51FCB2F5300C3641A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A07DDCC71FCB2F5300C3641A /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				A07DDCC71FCB2F5300C3641A /* MapVC.swift */,
+				A072E0F51FCDC0D400015F48 /* PopVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A072E0F61FCDC0D400015F48 /* PopVC.swift in Sources */,
 				A0B5BD3E1FCD91860003873C /* Constants.swift in Sources */,
 				A0B5BD3C1FCD8C490003873C /* PhotoCell.swift in Sources */,
 				A07DDCC81FCB2F5300C3641A /* MapVC.swift in Sources */,
