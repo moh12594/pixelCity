@@ -44,7 +44,7 @@ class MapVC: UIViewController, UIGestureRecognizerDelegate {
     collectionView?.register(PhotoCell.self, forCellWithReuseIdentifier: "photoCell")
     collectionView?.delegate = self
     collectionView?.dataSource = self
-    
+    registerForPreviewing(with: self, sourceView: collectionView!)
     collectionView?.backgroundColor = #colorLiteral(red: 0.9999960065, green: 1, blue: 1, alpha: 1)
     pullUpView.addSubview(collectionView!)
   }
@@ -250,7 +250,20 @@ extension MapVC: UICollectionViewDelegate, UICollectionViewDataSource {
   }
 }
 
-
+extension MapVC: UIViewControllerPreviewingDelegate {
+  func previewingContext(_ previewingContext: UIViewControllerPreviewing, viewControllerForLocation location: CGPoint) -> UIViewController? {
+    guard let indexPath = collectionView?.indexPathForItem(at: location), let cell = collectionView?.cellForItem(at: indexPath) else {return nil}
+    guard let popVC = storyboard?.instantiateViewController(withIdentifier: "PopVC") as? PopVC else {return nil}
+    
+    popVC.initData(forImage: imageArray[indexPath.row])
+    previewingContext.sourceRect = cell.contentView.frame
+    return popVC
+  }
+  
+  func previewingContext(_ previewingContext: UIViewControllerPreviewing, commit viewControllerToCommit: UIViewController) {
+    show(viewControllerToCommit, sender: self)
+  }
+}
 
 
 
