@@ -12,6 +12,7 @@
     <customFonts key="customFonts">
         <array key="Avenir.ttc">
             <string>Avenir-Black</string>
+            <string>Avenir-BlackOblique</string>
             <string>Avenir-Book</string>
         </array>
     </customFonts>
@@ -130,6 +131,24 @@
                                     <constraint firstAttribute="height" constant="30" id="mLj-2A-rsR"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Xw-Vd-3ZR">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Image title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="THZ-jL-QzM">
+                                        <rect key="frame" x="20" y="38.5" width="335" height="23.5"/>
+                                        <fontDescription key="fontDescription" name="Avenir-BlackOblique" family="Avenir" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.28133252640845069" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="THZ-jL-QzM" firstAttribute="leading" secondItem="1Xw-Vd-3ZR" secondAttribute="leading" constant="20" id="M8m-wQ-Oim"/>
+                                    <constraint firstAttribute="height" constant="100" id="bOC-IE-R3B"/>
+                                    <constraint firstItem="THZ-jL-QzM" firstAttribute="centerY" secondItem="1Xw-Vd-3ZR" secondAttribute="centerY" id="c6S-Of-w6Q"/>
+                                    <constraint firstAttribute="trailing" secondItem="THZ-jL-QzM" secondAttribute="trailing" constant="20" id="yyD-IM-I6Y"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -139,10 +158,14 @@
                             <constraint firstItem="0hc-A1-42V" firstAttribute="top" secondItem="Kke-Gw-Fhe" secondAttribute="bottom" constant="20" id="Lcj-Iz-j0L"/>
                             <constraint firstItem="bPO-cS-tk4" firstAttribute="top" secondItem="X2G-ug-cdz" secondAttribute="top" id="Qxn-25-BFh"/>
                             <constraint firstItem="0hc-A1-42V" firstAttribute="top" secondItem="bPO-cS-tk4" secondAttribute="bottom" id="bBV-HV-9Pa"/>
+                            <constraint firstItem="1Xw-Vd-3ZR" firstAttribute="top" secondItem="X2G-ug-cdz" secondAttribute="top" id="loa-Vz-aGx"/>
+                            <constraint firstAttribute="trailing" secondItem="1Xw-Vd-3ZR" secondAttribute="trailing" id="v4V-T5-Lct"/>
+                            <constraint firstItem="1Xw-Vd-3ZR" firstAttribute="leading" secondItem="X2G-ug-cdz" secondAttribute="leading" id="yK5-8W-bQg"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="popImageView" destination="bPO-cS-tk4" id="sWg-CJ-5h2"/>
+                        <outlet property="titleLabel" destination="THZ-jL-QzM" id="VGV-2F-gkB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eGE-I4-Uas" userLabel="First Responder" sceneMemberID="firstResponder"/>
